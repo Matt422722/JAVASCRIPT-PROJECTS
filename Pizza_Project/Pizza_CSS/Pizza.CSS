@@ -1,0 +1,72 @@
+/*body styling*/
+body { 
+	background-color: azure;
+}
+
+/*h1 h3 and div styling*/
+h1, h3, div {
+	font-family:'Courier New', Courier, monospace;
+	color: rgb(0, 107, 107);
+	text-align: center;
+}
+
+/*menu background styling*/
+#menuBG {
+	width:400px;
+	height:470px;
+	margin:10px auto;
+	}
+
+#frmMenu {
+	width:600px;
+	height:200px;
+	}
+
+#totalPrice {
+	width:200px;
+	height:190px;
+	margin:20px auto;
+	float:right;
+	}
+
+
+/*Column styling*/
+.left {
+	width:200px;
+	height:200px;
+	float:left;
+	}
+
+.center {
+	width:200px;
+	height:200px;
+	float:left;
+	}
+	
+.right {
+	width:200px;
+	height:200px;
+	float:right;
+	}
+
+    /*Cart/order styling*/
+#showText {
+	width:200px;
+	height:190px;
+	margin:0px auto;
+	float:left;
+	}
+		
+#cart {
+	top:0;margin:0px auto;
+	width:400px;
+	height:200px;
+    }
+	
+#btnOrder {
+	margin:10px 0px 0px 100px;
+	width:100px;
+	height:40px;
+	display: block;
+	margin: 25px auto;
+	}
