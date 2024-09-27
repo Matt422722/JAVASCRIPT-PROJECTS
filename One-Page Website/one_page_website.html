@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="one_page_website.css">
+<script src="JS/one_page_website.js"></script> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Enthusiasts</title>
+    <h1>Contact us for information on Fishing!</h1>
+    <p>If you are interested in fishing contact us with the following information.</p>
+</head>
+<body>
+        <form>
+            <input type="text" id="first Name" placeholder="First Name">
+            <input type="text" id="last Name" placeholder="Last Name"><br>
+            <input type="email" id="email" placeholder="Email">
+            <input type="tel" placeholder="Phone Number"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <nav>
+            <ol>
+                <li><a href="#fishing-video">Fishing video</a></li> <!-- Link to the video section using an anchor link -->
+            </ol>
+        </nav>
+        
+        <img src="images/sunset-striper.jpg" width="600" height="400" alt="Picture of a fisherman at sunset with a fish.">
+        
+        <!-- Embedded Video Section -->
+        <div id="fishing-video"> <!-- Add an id for direct linking -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OYjXoE7UtMk?si=OFXVi9hCuD-i1h6k" 
+                    title="Fishing Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+        <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="plant1.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="plant2.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="plant3.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="plant4.png" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+    <p>Author: Matthew Hannemann</p>
+    &copy;
+</footer>
+
+</html>
